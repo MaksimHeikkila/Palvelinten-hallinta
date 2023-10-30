@@ -26,23 +26,28 @@ Saltin asennus kävi melko helposti käyttäen Teron Salt-ohjetta (Karvinen 2023
 
 ## b) Viisi tärkeintä. Näytä esimerkit viidestä tärkeimmästä Saltin tilafunktiosta: pkg, file, service, user, cmd. Analysoi ja selitä tulokset.
 
-<img width="631" alt="pkg" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/eae028e0-a29e-4d18-8c42-8f37c255d9f6">
-
 # pkg.installed
 
 Komennolla varmistetaan tässä tapauksessa, että "tree" on asennettu järjestelmään.
 
-<img width="369" alt="file" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/f8fe38f5-83fd-4eee-92d9-343499f833f0">
+<img width="631" alt="pkg" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/eae028e0-a29e-4d18-8c42-8f37c255d9f6">
+
 
 # file.managed
 
 Hallinnoi tiedostoa. Esimerkiksi tässä tiedostoa /tmp/hellotero
 
-<img width="628" alt="service" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/a56e0946-d9e4-43b4-808c-b1470eb12af5">
+<img width="369" alt="file" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/f8fe38f5-83fd-4eee-92d9-343499f833f0">
 
 # service.running
 
 Varmistaa, että palvelu on käynnissä. Tässä tapauksessani apache2 ei ole käynnissä, eikä se käynnisty automaattisesti.
+
+<img width="628" alt="service" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/a56e0946-d9e4-43b4-808c-b1470eb12af5">
+
+# user
+
+Varmistaa, että käyttäjä on olemassa järjestelmässä. Tässä tapauksessa käyttäjä terote08
 
 
 <img width="629" alt="user" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/c16165df-24a8-4220-940d-e1017f653457">
@@ -50,15 +55,13 @@ Varmistaa, että palvelu on käynnissä. Tässä tapauksessani apache2 ei ole k�
 
 <img width="461" alt="user 2" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/1b768a03-7ed3-47a6-93c7-255893f675d4">
 
-# user
-
-Varmistaa, että käyttäjä on olemassa järjestelmässä. Tässä tapauksessa käyttäjä terote08
-
-<img width="460" alt="cmd" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/64878ddb-a7ec-4c2f-ab75-4a60411d1c4a">
-
 # cmd
 
 Suorittaa komennon
+
+
+<img width="460" alt="cmd" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/64878ddb-a7ec-4c2f-ab75-4a60411d1c4a">
+
 
 
 ##c) Idempotentti. Anna esimerkki idempotenssista. Aja 'salt-call --local' komentoja, analysoi tulokset, selitä miten idempotenssi ilmenee.
