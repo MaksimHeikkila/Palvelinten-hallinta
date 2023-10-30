@@ -1,13 +1,19 @@
 ## x) Lue ja tiivistä
 
 # Create a web page using Github (Karvinen 2023)
+
 -Luo käyttäjätunnus Githubiin ja luo uusi arkisto
+
 -Luo uusi tiedosto ja kirjoita sisältö siihen
+
 -Tallenna se .md-muodossa, jotta tiedosto muunnetaan automaattisesti verkkosivuksi
 
 # Run salt command locally (Karvinen 2023)
+
 -Asenna Salt slave komennoilla sudo apt-get update ja sudo apt-get -y install salt-minion
+
 -Linuxissa kaikki asetukset ovat vain tekstitiedostoja
+
 -
 
 
