@@ -1,2 +1,1 @@
-kokfoergoeorkoe
-kgrmrmrgmkremgkr
+## a) Asenna Salt (salt-minion) koneellesi.
