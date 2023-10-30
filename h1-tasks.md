@@ -21,6 +21,7 @@
 ## a) Asenna Salt (salt-minion) koneellesi.
 
 <img width="412" alt="Salt on nyt asennettu" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/650645c2-19d5-459d-aedf-2acdbd8bd1bb">
+
 Saltin asennus kävi melko helposti käyttäen Teron Salt-ohjetta (Karvinen 2023). Itselläni on käytössä Debianin versio 12, joten asennuksessa mentiin sen version ohjeiden mukaan. 
 
 ## b) Viisi tärkeintä. Näytä esimerkit viidestä tärkeimmästä Saltin tilafunktiosta: pkg, file, service, user, cmd. Analysoi ja selitä tulokset.
