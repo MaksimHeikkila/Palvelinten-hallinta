@@ -64,7 +64,7 @@ Suorittaa komennon
 
 
 
-##c) Idempotentti. Anna esimerkki idempotenssista. Aja 'salt-call --local' komentoja, analysoi tulokset, selitä miten idempotenssi ilmenee.
+## c) Idempotentti. Anna esimerkki idempotenssista. Aja 'salt-call --local' komentoja, analysoi tulokset, selitä miten idempotenssi ilmenee.
 
 Idempotentti tarkoittaa operaatiota, joka ei vaikuta sovellukseen, johon se kutsutaan, jos sitä kutsutaan useammin kuin kerran samoilla tuloparametreillä (Techopedia 2023). Esimerkkinä voi olla vaikkapa jonkin paketin asentaminen, esimerkiksi nginx. Jos paketti on jo asennettu, sen tila pysyy muuttumattomana, koska se on jo asennettu.
 
@@ -74,7 +74,7 @@ Idempotentti tarkoittaa operaatiota, joka ei vaikuta sovellukseen, johon se kuts
 Käytännön esimerkki idempotenssista: komento sudo salt-call --local state.single pkg.installed name=nginx kahteen kertaan. " all specified packages are already installed".
 
 
-##d) Tietoa koneesta. Kerää tietoja koneesta Saltin grains.items -tekniikalla. Poimi kolme kiinnostavaa kohtaa, näytä tulokset ('grains.item osfinger virtual') ja analysoi ne.
+## d) Tietoa koneesta. Kerää tietoja koneesta Saltin grains.items -tekniikalla. Poimi kolme kiinnostavaa kohtaa, näytä tulokset ('grains.item osfinger virtual') ja analysoi ne.
 
 <img width="153" alt="osfinger" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/41bbad58-386d-4489-93dc-af232571f38b">
 
