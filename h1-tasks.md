@@ -101,7 +101,7 @@ ip-osoitteeni
 BIOSin julkaisupäivämäärä
 
 
-##Lähteet
+## Lähteet
 
 Techopedia, 2023. Idempotenssi. Luettavissa: https://fi.theastrologypage.com/idempotence
 Tero Karvinen, 2023. Run salt command locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/
