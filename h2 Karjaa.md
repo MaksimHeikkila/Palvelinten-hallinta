@@ -204,10 +204,33 @@ Tein simppelin komennon:
 
 # h) Hello, IaC. Tee infraa koodina kirjoittamalla /srv/salt/hello/init.sls. Aja tila jollekin orjalle. Tila voi esimerkiksi tehdä esimerkkitiedoston johonkin hakemistoon. Testaa toisella komennolla, että pyytämäsi muutos on todella tehty.
 
+Seurasin Teron Salt Vagrant-ohjeita sivulla https://terokarvinen.com/2023/salt-vagrant/
 
-<img width="304" alt="ongelma" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/04ff7225-6fd9-4925-8ec3-b550a0df0997">
 
-Tässä kohtaa minulla tuli ongelmia
+Loin kansion ja tekstitiedoston:
+
+<img width="275" alt="init1" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/ae9d558a-a517-4a25-9e10-c01a3df2b582">
+
+
+<img width="319" alt="loin" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/e917421c-6ca7-4dce-a338-68461a3e10f0">
+
+Tekstitiedostoon lisäsin tekstin /tmp/infra-as-code:
+  file.managed
+
+  
+<img width="420" alt="liss" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/c16b8844-4a7c-4ede-ada1-c9f8709e379c">
+
+Kohtasin kuitenkin virheen ajaessani tiedostoa
+
+
+
+<img width="328" alt="virhe" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/95a82453-6e10-461c-92cf-578606c40197">
+
+
+
+
+
+
 
 # Lähteet
 
