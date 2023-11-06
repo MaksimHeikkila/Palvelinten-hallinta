@@ -52,6 +52,7 @@ Kokeilin ping-testillä, että netti toimii.
 Asensin Salt Masterin komennoilla 
 
 sudo apt-get update
+
 sudo apt-get install salt-master
 
 
