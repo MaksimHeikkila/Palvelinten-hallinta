@@ -132,7 +132,12 @@ master$ sudo salt-key -A
 
 <img width="649" alt="testi" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/7d76d980-d2fa-4576-98da-6fad5e4bcb86">
 
-Testasin, että yhteys toimii.
+Testasin, että yhteys toimii. Tässä kohtaa tuli kuitenkin varoitus Key 'file_ignore_glob' with value None has an invalid type of NoneType, a list is required for this value, jonka korjasin Teron ohjeella Quick fix for useless Salt warning.
+
+Menin komennolla sudoedit /etc/salt/master ja lisäsin rivin file_ignore_glob: [], jonka jälkeen varoitusta ei enää tullut.
+
+
+<img width="256" alt="varoitus" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/b8e4bcc4-0be2-472a-a9d5-d3b38185affc">
 
 
 
@@ -141,6 +146,18 @@ Testasin, että yhteys toimii.
 
 
 # e) Aja useita idempotentteja (state.single) komentoja verkon yli.
+
+Kokeillaan seuraavaa komentoa eli Apache2 asennus
+
+sudo salt '*' state.single pkg.installed apache2
+
+
+
+
+
+
+
+
 
 
 
