@@ -29,10 +29,13 @@ Asensin Vagrantin lataamalla sen osoitteesta https://developer.hashicorp.com/vag
 Asensin yhden koneen Vagrantilla komennoilla 
 
 $ vagrant init bento/ubuntu-16.04
+
 $ vagrant up
+
 $ vagrant ssh
 
 <img width="365" alt="vagrant ubuntu" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/819ecbff-aede-4d5d-9b62-f85143217e7a">
+
 
 <img width="394" alt="vagrant ssh" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/55c7c848-6251-40a5-af6e-06a30f18ea2a">
 
@@ -46,13 +49,33 @@ Kokeilin ping-testillä, että netti toimii.
 
 # c) Oma orjansa. Asenna Salt herra ja orja samalle koneelle.
 
+Asensin Salt Masterin komennoilla 
+
+sudo apt-get update
+sudo apt-get install salt-master
 
 
+<img width="275" alt="saltin käynnistys" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/743d2d96-ac52-43aa-999b-c03733769229">
+
+Salt Masterin käynnistys
+
+
+Asensin Salt Minionin komennolla
+
+sudo apt-get install salt-minion
+
+<img width="280" alt="salt minion start" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/caa992a1-9b7e-436f-9ff7-1752eda9c989">
+
+Salt minionin käynnistys
 
 
 
 
 # d) Asenna Saltin herra-orja arkkitehtuuri toimimaan verkon yli. (Verkko voi olla virtuaalinen verkko paikallisten virtuaalikoneiden välillä, kuten muissakin alakohdissa)
+
+
+<img width="177" alt="host ip" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/16b156de-4f56-4305-a4ee-4e8f25144c21">
+Selvitin Salt Masterin ip-osoitteen.
 
 
 
