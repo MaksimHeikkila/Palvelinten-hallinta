@@ -37,6 +37,11 @@ $ vagrant ssh
 <img width="365" alt="vagrant ubuntu" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/819ecbff-aede-4d5d-9b62-f85143217e7a">
 
 
+<img width="359" alt="uusi virtuaali" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/f4be1c03-2773-4f2f-b7e1-a89978b3f382">
+
+Uusi virtuaalikone on nyt asennettu.
+
+
 <img width="394" alt="vagrant ssh" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/55c7c848-6251-40a5-af6e-06a30f18ea2a">
 
 SSH-yhteys muodostettu onnistuneesti.
@@ -46,37 +51,89 @@ SSH-yhteys muodostettu onnistuneesti.
 Kokeilin ping-testillä, että netti toimii.
 
 
+<img width="430" alt="destroy" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/15e94314-94d0-438f-8a54-717a15e77d68">
+
+Lopuksi vielä poistuin virtuaalikoneesta ja tuhosin sen.
+
+
 
 # c) Oma orjansa. Asenna Salt herra ja orja samalle koneelle.
+
+Seuraavaksi loin uuden virtuaalikoneen ja otin siihen yhteyden aikaisempien ohjeiden mukaisesti komennoilla 
+
+$ vagrant init bento/ubuntu-16.04
+
+$ vagrant up
+
+$ vagrant ssh
+
+
+<img width="412" alt="uusi vagrant" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/aea57aa6-f4df-4dff-ac86-f1049181447e">
+
+Uusi virtuaalikone on valmis. Seuraavaksi Salt Master & Minion asennus Salt Quickstart- ohjeilla (Karvinen 2018)
+
 
 Asensin Salt Masterin komennoilla 
 
 sudo apt-get update
 
-sudo apt-get install salt-master
+sudo apt-get -y install salt-master
+
+hostname -I
+
+<img width="195" alt="master luotu" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/b227c789-94a1-493c-a857-db0217088764">
 
 
-<img width="275" alt="saltin käynnistys" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/743d2d96-ac52-43aa-999b-c03733769229">
-
-Salt Masterin käynnistys
+<img width="539" alt="master toiminnassa" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/d9785a66-7069-4c5e-968b-8a95c026814e">
 
 
-Asensin Salt Minionin komennolla
-
-sudo apt-get install salt-minion
-
-<img width="280" alt="salt minion start" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/caa992a1-9b7e-436f-9ff7-1752eda9c989">
-
-Salt minionin käynnistys
+Master luotu ja toiminnassa. Seuraavaksi minion
 
 
+<img width="529" alt="minion toiminnassa" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/0ddf79fd-3f93-408c-9aaf-78ce7451f101">
+
+Minion toiminnassa.
+
+
+Asensin Salt Minionin komennoilla
+
+sudo apt-get update
+
+sudo apt-get -y install salt-minion
 
 
 # d) Asenna Saltin herra-orja arkkitehtuuri toimimaan verkon yli. (Verkko voi olla virtuaalinen verkko paikallisten virtuaalikoneiden välillä, kuten muissakin alakohdissa)
 
+<img width="174" alt="hostname i" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/cebc5c9d-7a4a-422d-b20a-9a011b8c14d9">
 
 
-<img width="649" alt="yhteys" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/6fc494fd-beaa-46b2-8e5d-f7c3cb89f68c">
+
+Orjan täytyy tietää, että missä master on. Sitä varten avataan tekstieditori ja muokataan asetuksia komennolla
+
+sudoedit /etc/salt/minion
+
+
+<img width="101" alt="master id" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/790e2e9b-ade5-4b36-8aba-7b914ea9d5a9">
+
+Muokataan Master
+
+
+<img width="450" alt="uudelleen" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/9a601c2c-9277-4912-90c2-1e192ff4571a">
+
+Sen jälkeen minionin uudelleenkäynnistys, jonka jälkeen avaimen hyväksyntä komennolla
+
+master$ sudo salt-key -A
+
+
+<img width="256" alt="avain" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/cc872d59-257b-4829-8d3f-4aef12828109">
+
+
+
+
+<img width="649" alt="testi" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/7d76d980-d2fa-4576-98da-6fad5e4bcb86">
+
+Testasin, että yhteys toimii.
+
 
 
 
@@ -86,12 +143,6 @@ Salt minionin käynnistys
 # e) Aja useita idempotentteja (state.single) komentoja verkon yli.
 
 
-<img width="666" alt="idempotentti" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/c09841be-b441-4373-b561-3c3dc3121a22">
-
-
-
-
-sudo salt '*' state.single file.managed '/tmp/see-you-at-terokarvinen-com'
 
 
 
