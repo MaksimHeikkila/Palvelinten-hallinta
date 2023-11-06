@@ -74,8 +74,8 @@ Salt minionin käynnistys
 # d) Asenna Saltin herra-orja arkkitehtuuri toimimaan verkon yli. (Verkko voi olla virtuaalinen verkko paikallisten virtuaalikoneiden välillä, kuten muissakin alakohdissa)
 
 
-<img width="177" alt="host ip" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/16b156de-4f56-4305-a4ee-4e8f25144c21">
-Selvitin Salt Masterin ip-osoitteen.
+
+<img width="649" alt="yhteys" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/6fc494fd-beaa-46b2-8e5d-f7c3cb89f68c">
 
 
 
@@ -85,15 +85,23 @@ Selvitin Salt Masterin ip-osoitteen.
 # e) Aja useita idempotentteja (state.single) komentoja verkon yli.
 
 
+<img width="666" alt="idempotentti" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/c09841be-b441-4373-b561-3c3dc3121a22">
 
 
 
+
+sudo salt '*' state.single file.managed '/tmp/see-you-at-terokarvinen-com'
 
 
 
 # f) Kerää teknistä tietoa orjista verkon yli (grains.item)
 
 
+Hain tietoa käyttöjärjestelmästä ja muistin kapasiteetista komennolla 
+
+sudo salt *'* grains.item os os_family mem_total
+
+<img width="201" alt="tietoa" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/d93f068e-eed4-45ad-97b7-a463c24af86c">
 
 
 
@@ -101,11 +109,31 @@ Selvitin Salt Masterin ip-osoitteen.
 # g) Aja shell-komento orjalla verkon yli.
 
 
+Ajoin komennon sudo salt 'vagrant.vm' cmd run 'ls -l'
+
+
+<img width="654" alt="komento" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/26543dad-9adc-4ba2-9540-e91325754c9d">
+
+
 
 
 
 
 # h) Hello, IaC. Tee infraa koodina kirjoittamalla /srv/salt/hello/init.sls. Aja tila jollekin orjalle. Tila voi esimerkiksi tehdä esimerkkitiedoston johonkin hakemistoon. Testaa toisella komennolla, että pyytämäsi muutos on todella tehty.
+
+
+<img width="304" alt="ongelma" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/04ff7225-6fd9-4925-8ec3-b550a0df0997">
+
+Tässä kohtaa minulla tuli ongelmia
+
+# Lähteet
+
+Karvinen, 2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/
+
+Karvinen, 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds. Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/
+
+Slater, 2017. What is the definition of "cattle not pets"? Luettavissa: https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654
+
 
 
 
