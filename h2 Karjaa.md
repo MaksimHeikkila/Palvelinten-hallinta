@@ -151,14 +151,26 @@ Kokeillaan seuraavaa komentoa eli Apache2 asennus
 
 sudo salt '*' state.single pkg.installed apache2
 
+Ajoin komennon kaksi kertaa, jolloin tulos näytti tältä:
+
+<img width="399" alt="idem" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/2e6efa97-e8c5-4a88-954f-67d18713866f">'
+
+Muutoksia ei tule, joten idempotentti saavutettu.
+
+Seuraavaksi sama, mutta apache2 käynnistäminen:
+
+
+<img width="428" alt="apache" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/5a2ce28d-1e24-4565-8541-950336f5c30b">
+
+Apachen sammuttaminen:
+
+<img width="421" alt="sammuta" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/2b9fc100-ed51-4934-8ada-d86fd08e3833">
 
 
 
+<img width="410" alt="sammuta 2" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/fc672073-735c-4aa8-b9d4-0a440b4ca7ed">
 
-
-
-
-
+Idempotentti saavutettu.
 
 
 
@@ -166,22 +178,24 @@ sudo salt '*' state.single pkg.installed apache2
 # f) Kerää teknistä tietoa orjista verkon yli (grains.item)
 
 
-Hain tietoa käyttöjärjestelmästä ja muistin kapasiteetista komennolla 
+Hain tietoa käyttöjärjestelmästä komennolla 
 
-sudo salt *'* grains.item os os_family mem_total
+sudo salt-call --local grains.item osfinger
 
-<img width="201" alt="tietoa" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/d93f068e-eed4-45ad-97b7-a463c24af86c">
+<img width="353" alt="tietoa" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/7617591d-5940-4a20-a250-2dcf226d0d47">
+
+
+
+
 
 
 
 
 # g) Aja shell-komento orjalla verkon yli.
 
+Tein simppelin komennon:
 
-Ajoin komennon sudo salt 'vagrant.vm' cmd run 'ls -l'
-
-
-<img width="654" alt="komento" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/26543dad-9adc-4ba2-9540-e91325754c9d">
+<img width="462" alt="yksinkertainen" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/abb2eaee-272e-462e-848f-715ab575a21f">
 
 
 
