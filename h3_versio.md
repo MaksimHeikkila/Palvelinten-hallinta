@@ -205,12 +205,19 @@ Tarkastellaan vähän varaston lokia. Komento git log antaa seuraavan näkymän.
 
 # Lähteet
 
-https://terokarvinen.com/2023/configuration-management-2023-autumn/#h3-versio
+Karvinen, 2023. Infra as code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h3-versio. Luettu 11.11.2023
 
-https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+Github inc. Cloning a repository. Luettavissa: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository. Luettu 11.11.2023
 
+Luettavissa: https://support.atlassian.com/bitbucket-cloud/docs/add-edit-and-commit-to-source-files/. Luettu 11.11.2023
 
+Luettavissa: https://www.atlassian.com/git/tutorials/what-is-git. Luettu 11.11.2023
 
+Github inc. Connecting to github with ssh. Luettavissa: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection. Luettu 11.11.2023
+
+Luettavissa: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-push-an-existing-project-to-GitHub. Luettu 11.11.2023
+
+Luettavissa: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Windows-Example. Luettu 11.11.2023
 
 
 
