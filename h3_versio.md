@@ -157,7 +157,23 @@ Katsotaan löytyykö tiedosto Githubista ja löytyyhän se.
 
 # c) Doh! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
 
+Tein tyhmän muutoksen push.md tiedostoon. Komento: nano push.md
 
+
+<img width="453" alt="tyhmä" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/3bbb122d-fad4-4457-a74c-cb92c978e9b1">
+
+
+Komennolla cat push.md varmistetaan, että muutos tuli tehtyä
+
+
+<img width="459" alt="tarkastus" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/2dff06e6-beb7-494b-a4e1-2862c3dfc404">
+
+
+
+git reset --hard komennolla tuhoan äskeiset tyhmät muutokset. cat push.md tarkistetaan, että tulivatko muutokset voimaan ja kyllähän ne tulivat.
+
+
+<img width="327" alt="peruttu" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/cd04946d-3ce0-4515-aea9-1d1680873151">
 
 
 
@@ -165,6 +181,18 @@ Katsotaan löytyykö tiedosto Githubista ja löytyyhän se.
 
 
 # d) Tukki. Tarkastele ja selitä varastosi lokia. Tarkista, että nimesi ja sähköpostiosoitteesi näkyy haluamallasi tavalla ja korjaa tarvittaessa.
+
+
+Tarkastellaan vähän varaston lokia. Komento git log antaa seuraavan näkymän. Lokitiedoissa näkyy tekijän nimi ja päivämäärä. Lokimuutokset näkyvät oikein. Siellä näkyy esim. alkuperäinen commit ja viesti.
+
+
+<img width="431" alt="lokia" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/39edc236-a8ba-4f38-8a47-f23749df76c7">
+
+
+
+
+
+
 
 
 
