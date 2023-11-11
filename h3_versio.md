@@ -19,18 +19,6 @@ Myös readme.md on luotu.
 # b) Dolly. Kloonaa edellisessä kohdassa tehty uusi varasto itsellesi, tee muutoksia, puske ne palvelimelle, ja näytä, että ne ilmestyvät weppiliittymään.
 
 
-Kloonaamista varten tarvitsemme varaston URL-osoitteen. Mennäänpä siis varaston etusivulle ja sieltä klikataan kohtaa Code.
-
-
-
-<img width="680" alt="code" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/2cbca9b7-edbd-4336-8d2a-a5c5f116ff67">
-
-
-Kopioidaan URL-osoite.
-
-
-<img width="291" alt="url" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/08126545-66d8-45fb-a2ff-15122d0b31d8">
-
 
 Tarvitsemme jatkaaksemme Git bashin. Mennään osoitteeseen https://git-scm.com/download/win ja ladataan se Windowsille.
 
@@ -63,14 +51,103 @@ Työskentelen päähakemistossani.
 <img width="324" alt="päähakemisto" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/7368d4be-5dbd-4680-b684-f754e325a974">
 
 
-Kirjoitetaan git clone ja sitten Github- varastoni URL. Klooni on luotu.
+Aion käyttää SSH-osoitetta kloonaukseen. Githubin artikkeli auttoi minua tässä tehtävässä. Ajoin Windowsin Powershellillä komennon ssh-keygen -o -t rsa -C "key to winter  repo"
 
 
-<img width="347" alt="kloonattu" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/9945631a-c5b0-44c4-903d-e5590354efc9">
+<img width="419" alt="luotu on" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/a8ad2ae7-0cde-4fd2-9831-8eb794ae1ad2">
 
 
 
 
+Vaihdetaan hakemisto ssh-hakemistoon ja käydään vielä tarkistamassa, että avain on luotu. Kyllähän se näköjään on.
+
+
+<img width="314" alt="noin" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/4885ab05-f748-41b4-ab61-85bad0626f36">
+
+
+
+
+Tämän jälkeen lisätään uusi avain SSH-agenttiin. Avasin Powershellin järjestelmänvalvojan oikeuksilla ja käynnistin agentin komennoilla Get-Service -Name ssh-agent | Set-Service -StartupType Manual, sen jälkeen Start-Service ssh-agent ja sitten ssh-add yksityisen avaimen polku.
+
+
+
+Navigoin sijaintiin, johon SSH-avain on tallennettu ja avasin avaimen muistiolla. Kopioin sisällön.
+
+
+<img width="600" alt="navigoi" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/025c33b7-6b39-4d76-b103-0dc1ecddf54b">
+
+
+
+Liitin avaimen Github- asetuksissani kohtaan "SSH keys"
+
+
+<img width="695" alt="key" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/10cbc713-ccf5-401b-a2ba-f13aefafb594">
+
+
+Seuraavaksi otetaan SSH-yhteys Githubiin Git bashilla. Avasin Git bashin ja syötin komennon ssh -T git@github.com. Yhteys muodostettiin, mutta sain ilmoituksen " the authenticity of host cannot be established, are you sure you want to connect?" kirjoitin yes ja autentikointi onnistui.
+
+
+<img width="459" alt="gitti" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/34d95b3f-3fb1-4241-9f25-2355db7da76d">
+
+
+Sen jälkeen käytin komentoja git config --global user.email "maukka.heikkila98@gmail.com" ja git config --global user.name "MaksimHeikkila" puskeakseni tiedot Githubiin.
+
+
+<img width="452" alt="sen jälkeen" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/64f56739-ac70-439b-9a6d-2414f1dd4d4f">
+
+Sitten aletaan kloonaamaan itse varastoa. Mennään kopioimaan repositoryn SSH-osoite tuolta noin
+
+
+
+<img width="692" alt="tuolta noin" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/3cf244ce-01bc-4df8-89b7-b7169d8cd2f7">
+
+
+SSH-osoitteen kopioituani siirryn Git Bashiin ja ajan komennon git clone git@github.com:MaksimHeikkila/Winter.git, jonka jälkeen tarkistan, että onnistuiko komennolla cd winter. Hakemisto löytyy.
+
+
+<img width="444" alt="winterrrrrrr" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/b88b48f9-0c6a-4ac7-9ab0-204a128733d8">
+
+
+Seuraavaksi luodaan varastoon uusi tiedosto. Siirrytään hakemistoon winter ja testataan komentoa nano push.md, eli luodaan tekstitiedosto varastoon. Lisäsin tiedostoon tekstiä.
+
+
+<img width="451" alt="tstataa" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/25af76f2-b9c9-4c97-98e4-abfab26e8061">
+
+
+Tarkistin vielä ls-komennolla, että tekstitiedosto on tallentunut:
+
+
+
+<img width="266" alt="tarkistus" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/25b6f437-fe08-4e27-8fed-2589c1d8d430">
+
+
+Pusketaan tiedostot git add --all komennolla. Komento puskee kaikki tiedostot.
+
+
+<img width="443" alt="jepejp" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/253e7652-eb75-40c4-8a58-f201ce155627">
+
+
+
+Seuraavaksi commit komennolla git commit -m "Pusketaan uusi tiedosto GitHubiin". Yksi tiedosto lisätty insertioniin.
+
+
+
+<img width="283" alt="insertion" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/3fdf264c-34d7-4ad1-9bda-c855072366de">
+
+
+
+Sitten pusketaan itse tiedosto Githubiin komennolla git push. Lopputulos:
+
+
+
+<img width="345" alt="lopputulos" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/f793ce1c-d4b4-4967-865d-f96dd0ca1205">
+
+
+
+Katsotaan löytyykö tiedosto Githubista ja löytyyhän se.
+
+
+<img width="680" alt="pushed" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/61388b1a-a9ac-4a76-8060-5acf603e6732">
 
 
 
