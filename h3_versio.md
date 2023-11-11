@@ -45,7 +45,13 @@ Suoritetaan asennus vaihe vaiheelta.
 <img width="372" alt="asennus" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/615efdc4-d2e7-489d-baa6-807176e0b60f">
 
 
-Asennus on valmis. Avataan Git Bash.
+Asennus on valmis. Tarkistetaan vielä, että Git on asennettu komennolla git version
+
+
+<img width="310" alt="tarkistus" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/757cdd05-ad11-4139-a1b3-9123eb24d7b3">
+
+
+Avataan se
 
 
 <img width="376" alt="valmis" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/ea3880fc-d497-42a1-8ddf-13cd50f8ea7e">
