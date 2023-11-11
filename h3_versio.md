@@ -209,15 +209,15 @@ Karvinen, 2023. Infra as code 2023. Luettavissa: https://terokarvinen.com/2023/c
 
 Github inc. Cloning a repository. Luettavissa: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository. Luettu 11.11.2023
 
-Luettavissa: https://support.atlassian.com/bitbucket-cloud/docs/add-edit-and-commit-to-source-files/. Luettu 11.11.2023
+Bitbucket support. Add, edit and commit to source files. Luettavissa: https://support.atlassian.com/bitbucket-cloud/docs/add-edit-and-commit-to-source-files/. Luettu 11.11.2023
 
-Luettavissa: https://www.atlassian.com/git/tutorials/what-is-git. Luettu 11.11.2023
+Atlassian. What is Git? Luettavissa: https://www.atlassian.com/git/tutorials/what-is-git. Luettu 11.11.2023
 
 Github inc. Connecting to github with ssh. Luettavissa: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection. Luettu 11.11.2023
 
-Luettavissa: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-push-an-existing-project-to-GitHub. Luettu 11.11.2023
+Cameron McKenzie, 2023. How to git push an existing project to Github. Luettavissa: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-push-an-existing-project-to-GitHub. Luettu 11.11.2023
 
-Luettavissa: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Windows-Example. Luettu 11.11.2023
+Cameron McKenzie, 2023. How to SSH into Github on Windows example. Luettavissa: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Windows-Example. Luettu 11.11.2023
 
 
 
