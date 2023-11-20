@@ -1,4 +1,4 @@
-# En saanut valmiiksi ajan puitteissa. Tarvitsen lisäaikaa.
+# Johdanto
 
 Tein tehtävät HP Pavilion- kannettavallani. Tarkemmat speksit ovat: 8 GT RAM, Intel(R) Core(TM) i5-8265U CPU ja Windows 10 Home.
 
@@ -138,18 +138,24 @@ Sitten vuorossa automatisointi. Poistetaan apache2 orjalta komennolla sudo apt-g
 
 
 
-
-
 # d) SSHouto. Lisää uusi portti, jossa SSHd kuuntelee.
 
 
-Tätä tehtävää lähdin tekemään Virtualboxilla Teron ohjeiden mukaisesti. Käytin tähän Ubuntun desktop-versiota. Asensin ensiksi päivitykset komennoilla sudo apt update ja sudo apt upgrade -y. Sitten konfiguroidaan SSHd. 
+Tätä tehtävää lähdin tekemään Virtualboxilla Teron ohjeiden mukaisesti. Käytin tähän Ubuntun desktop-versiota. Asensin ensiksi päivitykset komennoilla sudo apt update ja sudo apt upgrade -y. Sitten konfiguroidaan SSHd. Ladataan openssh komennolla sudo apt-get install openssh-server -y 
+
+<img width="532" alt="openssh" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/74c68444-caf5-4dfe-be23-07d83bca3aa5">
 
 
+Siirryn hakemistoon /etc/ssh ja avaan komennolla sudo nano sshd_config- konfiguraatiotiedoston ja etsin ylhäältä rivin, jossa lukee portin numero, poistan risuaidan ja vaihdan portiksi 1234.
 
 
+<img width="542" alt="sudo nano" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/eb563924-c2c2-4c73-9f39-17f9f06534c1">
 
 
+Lopuksi komennoilla sudo systemctl restart sshd.service käynnistetään palvelu uudelleen, komennolla sudo systemctl status sshd.service statuksen tarkistaminen ja komennolla sudo nc -vz localhost 1234 yhteyden muodostaminen.
+
+
+<img width="543" alt="onnistu" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/4fc07dc9-8397-4b18-a3b4-9f662c04c326">
 
 
 
