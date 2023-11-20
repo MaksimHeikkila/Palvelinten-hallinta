@@ -127,7 +127,7 @@ Tarkistetaan, että demoni on aktiivinen komennolla sudo systemctl status apache
 <img width="419" alt="active" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/98adf48f-f630-4e72-a0a3-32a6059d7e1e">
 
 
-Sitten vuorossa automatisointi. Poistetaan apache2 orjalta komennolla sudo apt-get remove apache2 ja siirrytään herrakoneelle tmaster. Muokataan hello.sls- tiedostoon 4 funktiota ja tallennetaan.
+Sitten vuorossa automatisointi. Poistetaan apache2 orjalta komennolla sudo apt-get remove apache2 ja siirrytään herrakoneelle tmaster. Muokataan hello.sls- tiedostoon 4 funktiota ja tallennetaan. 
 
 
 
