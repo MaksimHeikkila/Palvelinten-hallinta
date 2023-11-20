@@ -97,11 +97,9 @@ Tallensin muutokset ctrl+x- näppäinyhdistelmällä ja sen jälkeen kokeilin aj
 
 
 
-
-
-
-
 # c) Apache. Asenna Apache, korvaa sen testisivu ja varmista, että demoni käynnistyy.
+
+
 
 
 
@@ -113,7 +111,7 @@ Tallensin muutokset ctrl+x- näppäinyhdistelmällä ja sen jälkeen kokeilin aj
 # d) SSHouto. Lisää uusi portti, jossa SSHd kuuntelee.
 
 
-
+Tätä tehtävää lähdin tekemään Virtualboxilla Teron ohjeiden mukaisesti. Käytin tähän Ubuntun desktop-versiota. Asensin ensiksi päivitykset komennoilla sudo apt update ja sudo apt upgrade -y. Sitten konfiguroidaan SSHd. 
 
 
 
