@@ -1,4 +1,4 @@
-# Johdanto
+# En saanut valmiiksi ajan puitteissa. Tarvitsen lisäaikaa.
 
 Tein tehtävät HP Pavilion- kannettavallani. Tarkemmat speksit ovat: 8 GT RAM, Intel(R) Core(TM) i5-8265U CPU ja Windows 10 Home.
 
