@@ -133,6 +133,11 @@ Sitten vuorossa automatisointi. Poistetaan apache2 orjalta komennolla sudo apt-g
 
 <img width="327" alt="activ" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/6246a395-dc45-4e08-b2c8-a7659250d545">
 
+Tässä kohtaa minulla tuli pieni ongelma. Kun yritin testata toimivuutta komennolla sudo salt 't001* state.apply hello, mitään ei tapahdu.
+
+
+
+<img width="382" alt="fail" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/6bbc9945-e33d-4c36-a346-69d480858d7c">
 
 
 
@@ -163,5 +168,18 @@ Lopuksi komennoilla sudo systemctl restart sshd.service käynnistetään palvelu
 # Lähteet
 
 
+Hautaviita, Joonas. 2023. h4-demonit. Luettavissa: https://github.com/hautadata/palvelintenhallinta-jh/blob/main/h4-demonit.md. Luettu: 20.11.2023
+
+Helminen, Thomas. 2023. h4-demonit. Luettavissa: https://github.com/ThomasHelminen/Palvelinten-hallinta--kurssi/blob/main/h4-demonit.md. Luettu: 20.11.2023
+
+Karvinen, Tero. 2023. Salt vagrant. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file. Luettu: 20.11.2023
+
+Saltproject.io. Salt user guide. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml. Luettu: 20.11.2023
+
+Karvinen, Tero. 2023. PKG file service. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/. Luettu: 20.11.2023
+
+Karvinen, Tero. 2023. Configuration management 2023 syksy. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/. Luettu: 20.11.2023
+
+Luettavissa: https://askubuntu.com/questions/176964/permanently-removing-apache2. Luettu: 20.11.2023
 
 
