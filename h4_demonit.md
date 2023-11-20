@@ -99,7 +99,39 @@ Tallensin muutokset ctrl+x- näppäinyhdistelmällä ja sen jälkeen kokeilin aj
 
 # c) Apache. Asenna Apache, korvaa sen testisivu ja varmista, että demoni käynnistyy.
 
+Käytetään tässä tehtävässä aikaisemmin, tehtävässä h2 luotuja virtuaalikoneita. Otetaan yhteys t001 minioniin komennolla vagrant ssh t001.
 
+
+
+<img width="411" alt="t001" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/1556f598-26af-4f1e-ba37-30c3c9ef27e2">
+
+Sitten tarkistetaan, että onko apache jo olemassa komennolla sudo systemctl status apache2. Ei ollut, joten asennetaan se komennolla sudo apt-get install apache2. Tarkistetaan, että asennus onnistui käyttämällä taas komentoa sudo systemctl status apache2. Onnistui
+
+
+<img width="541" alt="status" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/ab10c108-9bef-4d52-9808-63710851a48c">
+
+Asennuksen jälkeen siirrytään cd /var/www/html hakemistoon, jossa on index.html, joka tullaan korvaamaan. Poistin index.html-tiedoston sudo rm index-html- komennolla. Tarkistin sen jälkeen ls-komennolla, että tuliko tiedosto poistettua ja tulihan se.
+
+
+<img width="261" alt="rm" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/063ee21b-8bf7-4539-87c7-503bca2f68ac">
+
+Luon tilalle uuden .txt-tiedoston komennolla sudo nano uusi.txt. Lisäsin sinne tekstiä ja tallensin sen ctrl+x- näppäimillä. 
+
+
+<img width="336" alt="uusii" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/7f0fa81d-9cb2-453f-9541-70dc8a06b7a7">
+
+
+Tarkistetaan, että demoni on aktiivinen komennolla sudo systemctl status apache2 | grep "Active".
+
+
+<img width="419" alt="active" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/98adf48f-f630-4e72-a0a3-32a6059d7e1e">
+
+
+Sitten vuorossa automatisointi. Poistetaan apache2 orjalta komennolla sudo apt-get remove apache2 ja siirrytään herrakoneelle tmaster. Muokataan hello.sls- tiedostoon 4 funktiota ja tallennetaan.
+
+
+
+<img width="327" alt="activ" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/6246a395-dc45-4e08-b2c8-a7659250d545">
 
 
 
