@@ -19,7 +19,7 @@ Tein tehtävät HP Pavilion- kannettavallani. Tarkemmat speksit ovat: 8 GT RAM, 
 
 # a) CSI Kerava. Näytä 'find' avulla viimeisimmäksi muokatut tiedostot /etc/-hakemistosta ja kotihakemistostasi. Selitä kaikki käyttämäsi parametrit ja format string 'man find' avulla.
 
-Aloitin tehtävän tekemisen ottamalla yhteyden aikaisemmassa tehtävässä luodulle herrakoneelle komennolla ``vagrant ssh tmaster``. Sisällä siirryin /etc/- hakemistoon ja käytin ``find`` komentoa hakemiston sisällä ja lopputuloksena oli pitkä lista tiedostoja.
+Käytin Tero Karvisen |ohjetta|(https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/). Aloitin tehtävän tekemisen ottamalla yhteyden aikaisemmassa tehtävässä luodulle herrakoneelle komennolla ``vagrant ssh tmaster``. Sisällä siirryin /etc/- hakemistoon ja käytin ``find`` komentoa hakemiston sisällä ja lopputuloksena oli pitkä lista tiedostoja.
 
 
 <img width="249" alt="lista" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/bbc02162-f3ce-4133-b717-b39a8d5178cf">
@@ -61,25 +61,32 @@ Tehtävää varten loin tekstitiedoston graafisella käyttöliittymällä ja tal
 <img width="639" alt="tallennettu" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/453962ff-a578-434e-909a-a31a40c8c539">
 
 
-Nyt kun tiedosto on tallennettu, avaan komentokehotteen, siirryn samaan hakemistoon, mihin tallensin tekstitiedoston eli Desktop ja käytän komentoa ``sudo find -printf '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort`` nähdäkseni viimeksi muokatut tiedostot ja siellä näkyy tallentamani tiedosto esimerkkitiedosto.odt.
+Nyt kun tiedosto on tallennettu, avaan komentokehotteen, siirryn samaan hakemistoon, mihin tallensin tekstitiedoston eli Desktop ja käytän komentoa ``sudo find -printf '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort`` nähdäkseni viimeksi muokatut tiedostot ja siellä näkyy tallentamani tiedosto esimerkkitiedosto.odt parametreineen.
 
 
 <img width="620" alt="desktop" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/4170b787-e306-4ec6-8bdf-f970f851054c">
 
 
 
-
-
-
-
-
-
-
-
-
-
 # c) Komennus. Tee Salt-tila, joka asentaa järjestelmään uuden komennon.
+
+
+
+
+
+
+
 
 # d) Apassi. Tee Salt-tila, joka asentaa Apachen näyttämään kotihakemistoja.
 
 # e) Ämpärillinen. Tee Salt-tila, joka asentaa järjestelmään kansiollisen komentoja.
+
+# Lähteet
+
+Tero Karvinen, 2018. Apache User Homepages Automatically – Salt Package-File-Service Example. Luettavissa: https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/. Luettu: 26.11.2023.
+
+
+
+
+
+
