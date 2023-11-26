@@ -75,6 +75,9 @@ Nyt kun tiedosto on tallennettu, avaan komentokehotteen, siirryn samaan hakemist
 
 
 
+
+
+
 # c) Komennus. Tee Salt-tila, joka asentaa järjestelmään uuden komennon.
 
 # d) Apassi. Tee Salt-tila, joka asentaa Apachen näyttämään kotihakemistoja.
