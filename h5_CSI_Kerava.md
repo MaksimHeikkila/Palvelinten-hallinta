@@ -1,3 +1,8 @@
+# Johdanto
+
+Tein tehtävät HP Pavilion- kannettavallani. Tarkemmat speksit ovat: 8 GT RAM, Intel(R) Core(TM) i5-8265U CPU ja Windows 10 Home- käyttöjärjestelmä.
+
+
 # x) Lue ja tiivistä.
 
 -Asenna kaikki manuaalisesti. Asetustiedostot ovat /etc/-hakemistossa.
@@ -6,13 +11,67 @@
 
 -Käytettäessä komentoa tilassa, on komennosta tehtävä idempotentti.
 
--``$ sudo salt '*' state.apply apache`` lisää tilan masterilta
+-``$ sudo salt '*' state.apply apache`` lisää tilan masterilta.
 
 
 
 
 
 # a) CSI Kerava. Näytä 'find' avulla viimeisimmäksi muokatut tiedostot /etc/-hakemistosta ja kotihakemistostasi. Selitä kaikki käyttämäsi parametrit ja format string 'man find' avulla.
+
+Aloitin tehtävän tekemisen ottamalla yhteyden aikaisemmassa tehtävässä luodulle herrakoneelle komennolla ``vagrant ssh tmaster``. Sisällä siirryin /etc/- hakemistoon ja käytin ``find`` komentoa hakemiston sisällä ja lopputuloksena oli pitkä lista tiedostoja.
+
+
+<img width="249" alt="lista" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/bbc02162-f3ce-4133-b717-b39a8d5178cf">
+
+
+Kokeilen vielä komennolla ``sudo find -printf '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort``. että mitä näkyy. -printf '%T+ M %p\n%A+ A %p\n%C+ C %p\n'- parametri näyttää päivämäärät ja kellonajat, milloin tiedostoja on muokattu etc-hakemistossa, eli se määrittää tulostusmuodon. find etsii tiedostoja nykyisestä hakemistosta. |sort lajittelee tulokset, jotta viimeisimmäksi muokatut tiedostot näkyvät alimmaisena. Format string eli '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort on merkkijono, joka määrittelee, että miten ``find``-komento näyttää tulokset käyttäjälle. 
+
+-%T+ M %p: Näyttää tiedoston muokkausajan lisättynä kuukaudella, jonka jälkeen näytetään tiedoston polku
+
+-%A+ A %p: Näyttää tiedoston viimeisimmän käyttöajan lisättynä vuodella, jonka jälkeen näytetään tiedoston polku
+
+-%C+ C %p: Näyttää tiedoston metadata-muutoksen ajan lisättynä vuodella, jonka jälkeen näytetään tiedoston polku
+
+
+
+<img width="326" alt="etc" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/18f2c03d-b21a-4b5a-a152-0c776fa779ef">
+
+
+Kotihakemiston viimeksi muokatut tiedostot samoilla parametreillä ja format stringeillä.
+
+
+<img width="291" alt="home" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/ef1fa345-6d26-4d9d-8c71-6f1db580ede2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # b) Gui2fs. Muokkaa asetuksia jostain graafisen käyttöliittymän (GUI) ohjelmasta käyttäen ohjelman valikoita ja dialogeja. Etsi tämä asetus tiedostojärjestelmästä.
 
