@@ -47,35 +47,33 @@ Kotihakemiston viimeksi muokatut tiedostot samoilla parametreillä ja format str
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # b) Gui2fs. Muokkaa asetuksia jostain graafisen käyttöliittymän (GUI) ohjelmasta käyttäen ohjelman valikoita ja dialogeja. Etsi tämä asetus tiedostojärjestelmästä.
+
+Tätä tehtävää varten siirryin Virtualboxiin ja avasin Debian- virtuaalikoneen graafisella käyttöliittymällä. 
+
+
+<img width="360" alt="debian" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/88ac0a80-a6af-4ad4-aac1-d80eeb4b54a8">
+
+
+Tehtävää varten loin tekstitiedoston graafisella käyttöliittymällä ja tallensin sen virtuaalikoneen työpöydälle.
+
+
+<img width="639" alt="tallennettu" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/453962ff-a578-434e-909a-a31a40c8c539">
+
+
+Nyt kun tiedosto on tallennettu, avaan komentokehotteen, siirryn samaan hakemistoon, mihin tallensin tekstitiedoston eli Desktop ja käytän komentoa ``sudo find -printf '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort`` nähdäkseni viimeksi muokatut tiedostot ja siellä näkyy tallentamani tiedosto esimerkkitiedosto.odt.
+
+
+<img width="620" alt="desktop" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/4170b787-e306-4ec6-8bdf-f970f851054c">
+
+
+
+
+
+
+
+
+
 
 # c) Komennus. Tee Salt-tila, joka asentaa järjestelmään uuden komennon.
 
