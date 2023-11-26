@@ -25,7 +25,9 @@ Aloitin tehtävän tekemisen ottamalla yhteyden aikaisemmassa tehtävässä luod
 <img width="249" alt="lista" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/bbc02162-f3ce-4133-b717-b39a8d5178cf">
 
 
-Kokeilen vielä komennolla ``sudo find -printf '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort``. että mitä näkyy. -printf '%T+ M %p\n%A+ A %p\n%C+ C %p\n'- parametri näyttää päivämäärät ja kellonajat, milloin tiedostoja on muokattu etc-hakemistossa, eli se määrittää tulostusmuodon. find etsii tiedostoja nykyisestä hakemistosta. |sort lajittelee tulokset, jotta viimeisimmäksi muokatut tiedostot näkyvät alimmaisena. Format string eli '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort on merkkijono, joka määrittelee, että miten ``find``-komento näyttää tulokset käyttäjälle. 
+Kokeilen vielä komennolla ``sudo find -printf '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort``. että mitä näkyy. Tässä komennossa -printf määrittää tulostusmuodon, find etsii tiedostoja nykyisestä hakemistosta ja |sort lajittelee tulokset, jotta viimeisimmäksi muokatut tiedostot näkyvät alimmaisena.
+
+Format string eli '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort on merkkijono, joka määrittelee, että miten ``find``-komento näyttää tulokset käyttäjälle:
 
 -%T+ M %p: Näyttää tiedoston muokkausajan lisättynä kuukaudella, jonka jälkeen näytetään tiedoston polku
 
