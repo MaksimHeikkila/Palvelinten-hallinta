@@ -19,7 +19,7 @@ Tein tehtävät HP Pavilion- kannettavallani. Tarkemmat speksit ovat: 8 GT RAM, 
 
 # a) CSI Kerava. Näytä 'find' avulla viimeisimmäksi muokatut tiedostot /etc/-hakemistosta ja kotihakemistostasi. Selitä kaikki käyttämäsi parametrit ja format string 'man find' avulla.
 
-Käytin Tero Karvisen https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/. Aloitin tehtävän tekemisen ottamalla yhteyden aikaisemmassa tehtävässä luodulle herrakoneelle komennolla ``vagrant ssh tmaster``. Sisällä siirryin /etc/- hakemistoon ja käytin ``find`` komentoa hakemiston sisällä ja lopputuloksena oli pitkä lista tiedostoja.
+Käytin Tero Karvisen ohjetta https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/. Aloitin tehtävän tekemisen ottamalla yhteyden aikaisemmassa tehtävässä luodulle herrakoneelle komennolla ``vagrant ssh tmaster``. Sisällä siirryin /etc/- hakemistoon ja käytin ``find`` komentoa hakemiston sisällä ja lopputuloksena oli pitkä lista tiedostoja.
 
 
 <img width="249" alt="lista" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/bbc02162-f3ce-4133-b717-b39a8d5178cf">
