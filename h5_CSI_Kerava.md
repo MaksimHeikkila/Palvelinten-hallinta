@@ -191,7 +191,15 @@ Yritän päästä tässä vielä eteenpäin.
 
 # e) Ämpärillinen. Tee Salt-tila, joka asentaa järjestelmään kansiollisen komentoja.
 
+Tätä tehtävää varten siirryn taas /srv/salt- hakemistoon ja luon uuden kansion, johon luon 5 tekstitiedostoa. Luon kansion komennolla ``sudo mkdir kansiollinen``. Lisään kaikkiin tiedostoihin jonkin simppelin komennon, jotka löydän internetistä.
 
+
+<img width="331" alt="konennot" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/d93c7436-ec42-42d5-8c76-e59a94f41d80">
+
+SLS-tiedoston luonti.
+
+
+<img width="354" alt="sls" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/e0b0ddf5-c89d-44cf-9609-3f4b62e712bc">
 
 
 
