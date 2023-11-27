@@ -125,18 +125,85 @@ Testivaihe. Komennolla ``sudo salt 't001' state.apply world`` loin t001- orjalle
 
 
 
-
-
-
-
-
 # d) Apassi. Tee Salt-tila, joka asentaa Apachen näyttämään kotihakemistoja.
 
+Käytin tässä tehtävässä apuna Tero Karvisen artikkelia https://terokarvinen.com/2018/apache-user-homepages-automatically-salt-package-file-service-example/. Ensiksi siirryin hakemistoon komennolla ``cd /srv/salt/`` ja loin sinne uuden hakemiston "apache1", koska siellä on jo aiemmassa tehtävässä luotu apache2-hakemisto.
+
+
+
+<img width="263" alt="apache 1" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/c4b3bfb5-ff31-438c-8064-d46db69fac47">
+
+
+Luon uuden apache1.html- tiedoston, kopioin internetistä löytämäni mallipohjan ja lisään sinne vähän tekstiä.
+
+
+<img width="196" alt="tekst" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/0150b39e-07f7-481e-940f-1f114dcb87de">
+
+
+Nyt luon .sls-tiedoston käyttämällä Teron ohjetta. Kopioin seuraavan pätkän, johon vaihdan nimet omikseni:
+
+``apache2:
+ pkg.installed
+/var/www/html/index.html:
+ file.managed:
+   - source: salt://apache1/apache1.html
+/etc/apache2/mods-enabled/userdir.conf:
+ file.symlink:
+   - target: ../mods-available/userdir.conf
+/etc/apache2/mods-enabled/userdir.load:
+ file.symlink:
+   - target: ../mods-available/userdir.load
+apache2service:
+ service.running:
+   - name: apache2
+   - watch:
+     - file: /etc/apache2/mods-enabled/userdir.conf
+     - file: /etc/apache2/mods-enabled/userdir.load``
+
+
+
+
+<img width="299" alt="apachee" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/f8fdd7f8-48c1-4570-8a77-b865a001c02e">
+
+
+Testataan. Ajoin komennon ``sudo salt 't001' state.apply apache1`` ja 3 kohtaa onnistui, 2 ei.
+
+<img width="665" alt="virhe1" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/d05403e5-83d3-41e6-a063-976911d8333e">
+
+
+<img width="544" alt="virhe2" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/003ff6af-da26-4c08-80e3-ddb6170f13d2">
+
+
+Kokeilin selvittää tätä ongelmaa asentamalla päivitykset ``sudo apt-get update``- komennolla. Päivitys kuitenkin epäonnistuu.
+
+
+
+<img width="661" alt="invalid" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/b83c63fd-d969-43ae-b60c-c58e6a145816">
+
+
+Yritän päästä tässä vielä eteenpäin.
+
+
+
+
+
+
+
 # e) Ämpärillinen. Tee Salt-tila, joka asentaa järjestelmään kansiollisen komentoja.
+
+
+
+
+
+
+
+
 
 # Lähteet
 
 Tero Karvinen, 2018. Apache User Homepages Automatically – Salt Package-File-Service Example. Luettavissa: https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/. Luettu: 26.11.2023.
+
+https://www.hostinger.com/tutorials/bash-script-example#1_Hello_World
 
 
 
