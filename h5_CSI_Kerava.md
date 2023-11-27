@@ -70,6 +70,59 @@ Nyt kun tiedosto on tallennettu, avaan komentokehotteen, siirryn samaan hakemist
 
 # c) Komennus. Tee Salt-tila, joka asentaa järjestelmään uuden komennon.
 
+Käytän tässä tehtävässä aikaisemmin luomiani Vagrantin virtuaalikoneita. Laitetaan ne käyntiin ja otetaan yhteys masteriin komennoilla ``vagrant up`` ja ``vagrant ssh tmaster``-
+
+
+<img width="337" alt="up" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/608bc606-738f-459b-8fe2-6fd1c007e3de">
+
+
+<img width="413" alt="tmaster" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/9cd5883f-08d5-49db-b057-1a1c374ccba8">
+
+
+
+Siirryn tässä kohtaa tyhjään hakemistoon /usr/local/bin.
+
+
+<img width="224" alt="bin" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/2be6c33c-e956-4a9e-9aba-2069cc7caa7d">
+
+
+Teen yksinkertaisen Hello World- skriptin. Luodaan uusi skriptitiedosto komennolla ``sudo nano hello.md``- Löysin tämän skriptin sivustolta https://www.hostinger.com/tutorials/bash-script-example#1_Hello_World
+
+
+
+<img width="316" alt="hello" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/c57a7cf0-d64f-4292-a3bd-470631af6489">
+
+
+Seuraavaksi yritän ajaa skriptiä, mutta näyttää siltä, että minulla ei ole tarvittavia oikeuksia. Muokataan oikeuksia ``sudo chmod 755 hello.sh``-komennolla. Nyt näyttää toimivan.
+
+
+
+<img width="412" alt="sudo" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/82e1abd5-13c4-407b-ba5f-469c3eb3fa70">
+
+
+Luon vielä /srv/salt- hakemistoon uuden hakemiston ja samanlaisen skriptitiedoston. Muutan hakemiston ja skriptitiedoston nimeksi "world.md", koska hakemistossa on jo hello-niminen hakemisto ja init-tiedosto.
+
+
+<img width="296" alt="world" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/9d7e6871-9e7e-49ac-8853-c6652b588095">
+
+
+Sitten tehdään init-tiedosto, joka kertoo orjalle skriptin sijainnin. 
+
+
+
+<img width="200" alt="innit" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/84f7755c-872a-41d5-a619-7af91f9ff0ee">
+
+
+Testivaihe. Komennolla ``sudo salt 't001' state.apply world`` loin t001- orjalle /usr/local/bin- hakemistoon tämän skriptitiedoston. Olin tässä vaiheessa pitkään jumissa, koska init.sls-tiedostostani puuttui .sh worldin perästä. Nyt kuitenkin onnistui kun lisäsin sen. Sen jälkeen ajetaan komento ``sudo salt 't001' cmd.run 'world'`` ja se toimii.
+
+
+<img width="560" alt="sh" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/818fcdc3-0b05-4724-9ca8-c1510b0c8240">
+
+
+
+<img width="369" alt="toimii" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/6a9ec330-c173-4252-b9ad-7e712e2c1848">
+
+
 
 
 
