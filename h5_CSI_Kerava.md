@@ -211,7 +211,9 @@ SLS-tiedoston luonti.
 
 Tero Karvinen, 2018. Apache User Homepages Automatically – Salt Package-File-Service Example. Luettavissa: https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/. Luettu: 26.11.2023.
 
-https://www.hostinger.com/tutorials/bash-script-example#1_Hello_World
+Ignas R, 2023. 25 easy common Linux Bash scripts. Luettavissa: https://www.hostinger.com/tutorials/bash-script-example#1_Hello_World. Luettu: 27.11.2023.
+
+
 
 
 
