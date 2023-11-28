@@ -213,6 +213,12 @@ Tero Karvinen, 2018. Apache User Homepages Automatically – Salt Package-File-S
 
 Ignas R, 2023. 25 easy common Linux Bash scripts. Luettavissa: https://www.hostinger.com/tutorials/bash-script-example#1_Hello_World. Luettu: 27.11.2023.
 
+Joonas Hautaviita, 2023. h5-csikervo.md. Luettavissa: https://github.com/hautadata/palvelintenhallinta-jh/blob/main/h5-csikervo.md. Luettu: 27.11.2023.
+
+Thomas Helminen, 2023. h5-CSI-Kerava. Luettavissa: https://github.com/ThomasHelminen/Palvelinten-hallinta--kurssi/blob/main/h5-CSI-Kerava.md. Luettu: 27.11.2023.
+
+
+
 
 
 
