@@ -5,8 +5,19 @@ Tein tehtävät HP Pavilion- kannettavallani. Tarkemmat speksit ovat: 8 GT RAM, 
 
 # x) Lue ja tiivistä.
 
+-Lataa sivustolta https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise Windows- virtuaalikoneeseen tarvittava ISO-tiedosto, avaa Virtualbox ja valitse kohta ``New``
 
+-Nimeä virtuaalikoneesi, aseta käyttöjärjestelmäksi Windows 10, keskusmuistiksi 8 GB, luo
 
+-Valitse kovalevyn tyypiksi VDI, koko 50 GB, dynaamisesti allokoitu. Määritä prosessorien määräksi 4 klikkaamalla juuri luotua virtuaalikonetta hiiren oikealla näppäimellä ja siirtymällä system -> processor- kohtaan
+
+-Seuraa asennusohjeita. Määritä sijainniksi oma sijainti. Custom install Windows only. Kun pyytää kirjautumista, valitse "domain login"
+
+-/etc- hakemisto: sisältää asennustiedostoja. "Asennustiedosto" on tiedosto, jolla hallitaan ohjelman toimintaa.
+
+-/home- hakemisto: käyttäjän kotihakemisto. 
+
+-/bin- hakemisto: sisältää komentoja, joita järjestelmänvalvoja ja käyttäjät voivat käyttää. Binissä ei voi olla alahakemistoja.
 
 
 
