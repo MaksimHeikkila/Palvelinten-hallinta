@@ -28,6 +28,42 @@ Tein tehtävät HP Pavilion- kannettavallani. Tarkemmat speksit ovat: 8 GT RAM, 
 # a) Asenna Windows virtuaalikoneeseen.
 
 
+Windowsin asennusta varten tarvitsen ISO-tiedoston. Siirryn tiedoston latausta varten osoitteeseen https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise ja lataan sen. Latasin 64-bittisen version.
+
+
+<img width="463" alt="iso" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/2d558bc4-f2f4-484e-a76d-126df01218e7">
+
+
+Seuraavaksi siirryn Virtualboxiin, päivitän sen ja aloitan asennuksen kohdasta New. Valitsen lataamani ISO-tiedoston, käyttöjärjestelmäksi Windows 10
+
+
+<img width="798" alt="asennusta" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/92378932-8f0d-4bdc-a696-a93cfd722d2a">
+
+
+Valitaan 8 GB keskusmuistia ja 4 prossua
+
+
+<img width="802" alt="prossut" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/80521649-314a-4b5b-a80b-4e14b6e462f9">
+
+Kovalevyn koko 50 GB ja VDI (VirtualBox Disk Image)
+
+
+<img width="796" alt="muistii" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/aa6bfd90-1a29-4bbd-b0d5-3aa9d83550c3">
+
+
+Virtuaalikone näkyy luotuna
+
+
+<img width="360" alt="luotuna" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/dcf5c54b-a428-43f2-a72e-040520bbdf00">
+
+
+
+
+
+
+
+
+
 # b) Asenna Salt Windowsille. Osoita 'salt-call --local' komentoa ajamalla, että asennus on onnistunut.
 
 
