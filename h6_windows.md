@@ -115,8 +115,29 @@ Tarkistetaan vielä komennolla ``salt-call --version``, että Salt on varmasti a
 # c) Kerää Windows-koneesta tietoa grains.items -toiminnolla. Poimi 'grains.item' perään muutamia keskeisiä tietoja ja analysoi ne, eli selitä perusteellisesti mitä ne ovat. Kuvaile ja vertaile numeroita.
 
 
+Avasin Powershellin järjestelmänvalvojana ja syötin komennon ``salt-call --local grains.items``.
 
 
+
+<img width="251" alt="powershell" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/c08081db-cc56-4a2a-97e4-fc3e13cb6437">
+
+
+RAM-muistin määrä.
+
+
+<img width="72" alt="memory" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/48eb3a15-52a2-433d-92e4-02c34444d190">
+
+
+Käytössä oleva prosessori.
+
+
+<img width="213" alt="prossu" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/74d77296-e0ca-4f43-8b26-22bc1b00a452">
+
+
+IPV4-osoite.
+
+
+<img width="93" alt="ipv4" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/1b50e020-5f3b-4a1b-8990-916c6e4944f8">
 
 
 
