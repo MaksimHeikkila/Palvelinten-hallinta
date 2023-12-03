@@ -84,18 +84,42 @@ Windows on nyt asennettu.
 
 
 
-
-
-
-
-
-
-
-
 # b) Asenna Salt Windowsille. Osoita 'salt-call --local' komentoa ajamalla, että asennus on onnistunut.
 
 
+Siirryin sivustolle https://docs.saltproject.io/salt/install-guide/en/latest/topics/downloads.html ja latasin Saltin.
+
+<img width="553" alt="saltti" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/bdfe2835-bddc-469a-bf4b-56fed6f1eda3">
+
+Asennusta.
+
+
+<img width="314" alt="salttiii" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/4c50496a-79f5-4a89-8568-e41c950b8bcb">
+
+
+Asennettu.
+
+
+<img width="310" alt="asennettud" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/d6694e6c-29b5-4593-a85a-0a71df1108c8">
+
+Tarkistetaan vielä komennolla ``salt-call --version``, että Salt on varmasti asennettu.
+
+
+<img width="186" alt="sulfur" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/d209cff8-7bc2-4cda-949f-c7043e9e1cfa">
+
+
+
+
+
+
 # c) Kerää Windows-koneesta tietoa grains.items -toiminnolla. Poimi 'grains.item' perään muutamia keskeisiä tietoja ja analysoi ne, eli selitä perusteellisesti mitä ne ovat. Kuvaile ja vertaile numeroita.
+
+
+
+
+
+
+
 
 
 # d) Kokeile Saltin file -toimintoa Windowsilla.
