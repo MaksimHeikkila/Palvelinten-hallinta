@@ -58,6 +58,34 @@ Virtuaalikone näkyy luotuna
 
 
 
+Konfigurointi ohjeiden mukaisesti.
+
+
+<img width="308" alt="now" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/952d3508-3eb9-455c-8fc4-7f3424cc601c">
+
+
+<img width="514" alt="konff" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/9d542561-f2b3-4454-91d5-01129764b5fb">
+
+
+<img width="321" alt="setup" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/62a92f76-3b25-4698-8ac9-2128c7f400cf">
+
+
+
+<img width="513" alt="finland" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/8b542c6e-e658-4b5b-87ef-b02d07a69105">
+
+
+
+<img width="511" alt="maksim" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/2df8e7c8-84e8-40db-9e19-68643865274b">
+
+
+Windows on nyt asennettu.
+
+<img width="508" alt="asennettu" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/74c64947-23ca-40b2-b7ff-c67e2a3820a0">
+
+
+
+
+
 
 
 
