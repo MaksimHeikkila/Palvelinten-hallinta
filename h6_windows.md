@@ -145,6 +145,16 @@ IPV4-osoite.
 
 # d) Kokeile Saltin file -toimintoa Windowsilla.
 
+Tehtävää varten loin tekstitiedoston työpöydälle ja käytin komentoa ``sal-call --local state.single file.managed C:\users\Maksim\desktop\testi.txt``. Komento toimi onnistuneesti. 
+
+
+
+<img width="531" alt="filemanaged" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/43edd8b3-4689-49a5-a512-950f2b51c912">
+
+
+
+
+
 
 # e) Kokeile jotain itsellesi uutta toimintoa Saltista Windowsilla. (Voit käyttää apuna edellisten vuosien kotitehtäväraporttia tai Karvinen 2018: Control Windows with Salt. Huomaa, että noissa muistiinpanoissani voi jo hieman ikä painaa, ja niissä on myös epärelevantteja kokeiluja.)
 
