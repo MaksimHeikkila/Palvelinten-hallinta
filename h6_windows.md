@@ -184,4 +184,5 @@ Karvinen, Tero. 2023. Configuration management 2023 autumn. Luettavissa: https:/
 
 Karvinen, Tero. 2018. Control Windows with salt. Luettavissa: https://terokarvinen.com/2018/control-windows-with-salt/. Luettu: 3.12.2023.
 
+Hautaviita, J. 2023. H6- Windows. Luettavissa: https://github.com/hautadata/palvelintenhallinta-jh/blob/main/h6-windows.md. Luettu: 3.12.2023.
 
