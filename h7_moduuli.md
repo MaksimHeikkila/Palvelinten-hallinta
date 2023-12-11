@@ -1,4 +1,6 @@
-# Johdanto KESKEN
+# Johdanto
+
+Tein tällaisen aika yksinkertaisen miniprojektin, koska en ole vielä mikään mestari tässä. Projektin tavoitteena olisi yksinkertaisesti pistää pystyyn herra-orja arkkitehtuuri, asentaa Apache, joitakin paketteja ja luoda oma komento, joka olisi edes hieman edistyneempi kuin pelkkä "echo". Loppupuolella aion ajaa Salt-tilat kaikilla orjilla samanaikaisesti ja sitten testata niitä.
 
 Tein moduulin HP Pavilion- kannettavallani. Tarkemmat speksit ovat: 8 GT RAM, Intel(R) Core(TM) i5-8265U CPU ja Windows 10 Home- käyttöjärjestelmä.
 
