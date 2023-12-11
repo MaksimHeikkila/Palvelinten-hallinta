@@ -135,8 +135,10 @@ Apache on aktiivinen.
 
 
 
+# Kurssin yhteenveto
 
 
+Teron Palvelinten hallinta-kurssi oli välillä ärsyttävänkin hankala ja aikaa vievä. Tästä syystä tehtäviä tehdessä sapetti aika usein, mutta tällä tavalla itse hommia tekemällä meidät pakotettiin oppimaan ja omaksumaan kurssin asioita. Odotan seuraavilta Teron kursseilta samanlaista tekemisen meininkiä. 5/5.
 
 
 
@@ -146,13 +148,15 @@ Apache on aktiivinen.
 
 # Lähteet
 
-https://terokarvinen.com/2023/salt-vagrant/
+Karvinen, T. 2023. Salt-vagrant. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/. Luettu: 11.12.2023.
 
-https://github.com/ThomasHelminen/Palvelinten-hallinta--kurssi/blob/main/h2-karjaa.md
+Helminen, T. 2023. h2-karjaa. Luettavissa: https://github.com/ThomasHelminen/Palvelinten-hallinta--kurssi/blob/main/h2-karjaa.md. Luettu: 11.12.2023.
 
-https://github.com/hautadata/palvelintenhallinta-jh/blob/main/H2-karjaa.md
+Hautaviita, J. 2023. H2-karjaa. Luettavissa: https://github.com/hautadata/palvelintenhallinta-jh/blob/main/H2-karjaa.md. Luettu: 11.12.2023.
 
-https://ryanstutorials.net/html-tutorial/html-template.php
+Ryan, 2023. HTML tutorial 3-basic template. Luettavissa: https://ryanstutorials.net/html-tutorial/html-template.php. Luettu: 11.12.2023.
+
+Krakau, E. 2023. h7-miniprojekti. Luettavissa: https://github.com/esskra/palvelinten_hallinta/blob/main/h7-miniprojekti.md. Luettu: 11.12.2023.
 
 
 
