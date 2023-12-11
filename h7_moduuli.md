@@ -88,6 +88,27 @@ Seuraavaksi teen oman simppelin komennon. Komentoa varten luon komento-hakemisto
 
 <img width="309" alt="kovempaa" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/4247b0d0-8d0e-452d-811f-3f87a3ff8957">
 
+Sitten luodaan taas init.sls-tiedosto.
+
+
+<img width="243" alt="inniiiiii" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/a23f32a3-abbe-4510-9646-23faecf19411">
+
+
+# Kaikkien tilojen ajaminen samanaikaisesti
+
+Luodaan top.sls-tiedosto, jotta voimme ajaa tilat samanaikaisesti kaikilla koneilla. ``sudo nano top.sls``
+
+
+
+<img width="157" alt="toppi" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/8d65a4e5-a549-41a8-b31a-b1d80e36788a">
+
+Kaikki onnistui.
+
+
+
+<img width="165" alt="kaikkii" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/2e3185a1-7e07-4db9-b0ec-c4cddc0ad975">
+<img width="156" alt="kaikki" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/a2e3345c-4829-4d3c-b0b0-516832af080f">
+
 
 
 
