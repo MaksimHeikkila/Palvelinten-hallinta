@@ -80,11 +80,16 @@ Seuraavaksi teen oman simppelin komennon. Komentoa varten luon komento-hakemisto
 
 
 
-``sudo nano komento``- komennolla luon uuden skriptin. Skripti on simppeli if/else-skripti, johon voi syöttää oman koearvosanan. Jos arvosana on yli 70, skripti printtaa "hyvää työtä!". Jos se on alle 50, skripti printtaa "työskentele kovempaa!". Tallennetaan se nimellä ifkomento.sh.
+``sudo nano komento``- komennolla luon uuden skriptin. Skripti on simppeli if/else-skripti, johon voi syöttää oman koearvosanan. Jos arvosana on yli 70, skripti printtaa "hyvää työtä!". Jos se on alle 50, skripti printtaa "työskentele kovempaa!". Tallennetaan se nimellä ifkomento.sh. Annetaan vielä ajo-oikeudet sille komennolla ``sudo chmod +x ifkomento.sh``. Ajetaan pari kertaa.
+
+
+<img width="184" alt="ge" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/ec48494d-047b-455e-9faf-0c9d48cbe580">
+
+
+<img width="309" alt="kovempaa" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/4247b0d0-8d0e-452d-811f-3f87a3ff8957">
 
 
 
-<img width="174" alt="if else" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/49d32f89-89f3-4945-a71b-2eb7c7277424">
 
 
 
