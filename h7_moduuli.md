@@ -1,4 +1,4 @@
-# Johdanto
+# Johdanto KESKEN
 
 Tein moduulin HP Pavilion- kannettavallani. Tarkemmat speksit ovat: 8 GT RAM, Intel(R) Core(TM) i5-8265U CPU ja Windows 10 Home- käyttöjärjestelmä.
 
@@ -77,7 +77,15 @@ Seuraavaksi teen oman simppelin komennon. Komentoa varten luon komento-hakemisto
 <img width="347" alt="snipp" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/c53c8999-ad7a-48bf-98b2-e73b8909bc56">
 
 
-``sudo nano komento``- komennolla luon uuden skriptin
+``sudo nano komento``- komennolla luon uuden skriptin. Skripti on simppeli if/else-skripti, johon voi syöttää oman koearvosanan. Jos arvosana on yli 70, skripti printtaa "hyvää työtä!". Jos se on alle 50, skripti printtaa "työskentele kovempaa!". Tallennetaan se nimellä ifkomento.sh.
+
+
+<img width="174" alt="if else" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/49d32f89-89f3-4945-a71b-2eb7c7277424">
+
+
+
+
+
 
 
 
