@@ -102,7 +102,7 @@ Luodaan top.sls-tiedosto, jotta voimme ajaa tilat samanaikaisesti kaikilla konei
 
 <img width="157" alt="toppi" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/8d65a4e5-a549-41a8-b31a-b1d80e36788a">
 
-Kaikki onnistui.
+Kaikki onnistui. Orjilla on nyt rsync, lftp ja curl asennettuna, Apache2 asennettuna ja tekemäni komento käytössä. Kotisivu on tekemäni .html-sivu.
 
 
 
