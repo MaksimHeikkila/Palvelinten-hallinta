@@ -138,7 +138,7 @@ Apache on aktiivinen.
 # Kurssin yhteenveto
 
 
-Teron Palvelinten hallinta-kurssi oli välillä ärsyttävänkin hankala ja aikaa vievä. Tästä syystä tehtäviä tehdessä sapetti aika usein, mutta tällä tavalla itse hommia tekemällä meidät pakotettiin oppimaan ja omaksumaan kurssin asioita. Odotan seuraavilta Teron kursseilta samanlaista tekemisen meininkiä. 5/5.
+Teron Palvelinten hallinta-kurssi oli välillä ärsyttävänkin hankala ja aikaa vievä. Kuitenkin tällä tavalla itse hommia tekemällä meidät pakotettiin oppimaan ja omaksumaan kurssin asioita. Odotan seuraavilta Teron kursseilta samanlaista tekemisen meininkiä. 5/5.
 
 
 
