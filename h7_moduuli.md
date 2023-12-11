@@ -96,7 +96,7 @@ Sitten luodaan taas init.sls-tiedosto.
 
 # Kaikkien tilojen ajaminen samanaikaisesti
 
-Luodaan top.sls-tiedosto, jotta voimme ajaa tilat samanaikaisesti kaikilla koneilla. ``sudo nano top.sls``
+Luodaan top.sls-tiedosto, jotta voimme ajaa tilat samanaikaisesti kaikilla koneilla. ``sudo nano top.sls``. Käytetään komentoa "sudo salt '*' state.apply", jotta voimme ajaa tilat kummallakin orjalla.
 
 
 
