@@ -35,6 +35,10 @@ Testasin vielä herran ja orjien yhteyttä komennolla ``sudo salt '*' test.ping`
 
 <img width="239" alt="kunnossa" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/f898efb8-a9eb-4336-9a57-11d6c4b1e4af">
 
+# Apache
+
+Seuraavaksi Apachen asennuksen kimppuun. Asennetaan Apache herrakoneella komennolla ``sudo apt install apache2``. Asennuksen jälkeen siirrytään hakemistoon komennolla ``cd /var/www/html`` ja poistin index.html- tiedoston. 
+
 
 
 
