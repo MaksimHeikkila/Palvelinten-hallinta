@@ -110,6 +110,27 @@ Kaikki onnistui. Orjilla on nyt rsync, lftp ja curl asennettuna, Apache2 asennet
 <img width="156" alt="kaikki" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/a2e3345c-4829-4d3c-b0b0-516832af080f">
 
 
+# Testaus
+
+Seuraavaksi siirryn orjakoneelle t001 ja testaan, että kaikki on kondiksessa. Komento ainakin toimii.
+
+
+
+<img width="182" alt="komento toimii" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/da1abdb2-aefe-435e-aae8-bf7b5ca459bd">
+
+
+``curl``-komento näyttää html-sivun.
+
+<img width="597" alt="curl" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/ed1bcf23-47cf-4597-9149-444ed70aae08">
+
+
+Apache on aktiivinen.
+
+
+
+<img width="663" alt="apacheey" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/0286642b-388a-430b-8f59-9d51d552db18">
+
+
 
 
 
