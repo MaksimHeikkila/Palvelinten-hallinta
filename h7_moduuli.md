@@ -37,7 +37,41 @@ Testasin vielä herran ja orjien yhteyttä komennolla ``sudo salt '*' test.ping`
 
 # Apache
 
-Seuraavaksi Apachen asennuksen kimppuun. Asennetaan Apache herrakoneella komennolla ``sudo apt install apache2``. Asennuksen jälkeen siirrytään hakemistoon komennolla ``cd /var/www/html`` ja poistin index.html- tiedoston. 
+Seuraavaksi Apachen asennuksen kimppuun. Asennetaan Apache herrakoneella komennolla ``sudo apt install apache2``. Asennuksen jälkeen luon uuden hakemisto komennolla ``sudo mkdir /srv/salt``. Loin sinne kansion nimeltä apache2.
+
+
+<img width="287" alt="apachey" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/2e562d6b-1078-4202-8a45-166413ac1d6e">
+
+
+Loin sinne apache2 index.html-tiedoston komennolla ``sudo nano projekti.html``. Lisäsin tekstiä ja tallensin sen.
+
+
+<img width="611" alt="html" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/0845556b-ca6a-41a9-b4e6-621264d223b6">
+
+Seuraavaksi tarvitaan init.sls-tiedosto. Luon sen samaan hakemistoon ja lisään sisällön. Vaihdoin tiedoston nimen omaksi eli projekti.html. Pkg. installed tarkistaa, että apache2 on asennettu. file.managed viittaa index.html:n lähteen olevan luomani projekti.html. Service.running varmistaa, että apache pyörii.
+
+``apache2:
+ pkg.installed
+/var/www/html/index.html:
+ file.managed:
+   - source: salt://apache2/projekti.html
+/etc/apache2/mods-enabled/userdir.conf:
+ file.symlink:
+   - target: ../mods-available/userdir.conf
+/etc/apache2/mods-enabled/userdir.load:
+ file.symlink:
+   - target: ../mods-available/userdir.load
+apache2service:
+ service.running:
+   - name: apache2
+   - watch:
+     - file: /etc/apache2/mods-enabled/userdir.conf
+     - file: /etc/apache2/mods-enabled/userdir.load``
+
+Seuraavaksi salt-tilan ajo. Ajan sen t001 orjakoneellani. Hyvältä näyttää.
+
+
+<img width="191" alt="ajo" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/eb64cb95-b91c-4996-afa2-3cb62f461fe8">
 
 
 
