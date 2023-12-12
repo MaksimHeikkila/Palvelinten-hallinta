@@ -52,7 +52,7 @@ Loin sinne apache2 index.html-tiedoston komennolla ``sudo nano projekti.html``. 
 
 <img width="611" alt="html" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/0845556b-ca6a-41a9-b4e6-621264d223b6">
 
-Seuraavaksi tarvitaan init.sls-tiedosto. Luon sen samaan hakemistoon ja lisään sisällön. Vaihdoin tiedoston nimen omaksi eli projekti.html. Pkg. installed tarkistaa, että apache2 on asennettu. file.managed viittaa index.html:n lähteen olevan luomani projekti.html. Service.running varmistaa, että apache pyörii.
+Seuraavaksi tarvitaan init.sls-tiedosto. Luon sen samaan hakemistoon ja lisään sisällön. Pkg. installed tarkistaa, että apache2 on asennettu. file.managed viittaa index.html:n lähteen olevan luomani projekti.html. Service.running varmistaa, että apache pyörii.
 
 
 <img width="298" alt="innit fam" src="https://github.com/MaksimHeikkila/Palvelinten-hallinta/assets/148875816/2836d72a-7829-4207-9a14-3c4f8bf17a04">
